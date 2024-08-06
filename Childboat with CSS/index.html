@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 280px;
+        height: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Inconsolata", monospace;
+        font-size: 28px;
+        border:1px solid #c39f76 ;
+        box-sizing:border-box;
+        position: relative;
+        flex-direction: column;
+        
+    }
+
+    .body{
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+    }
+
+    .triangle{
+        height: 0;
+        width: 0;
+        border-bottom: 80px solid #c39f76;
+        border-right: 60px solid transparent;
+        position: relative;
+        top: 20px;
+    }
+     .right{
+        height: 0;
+        width: 0;
+        border-bottom: 100px solid #c39f76;
+        border-left: 60px solid transparent;
+        position: relative;
+        
+    }
+    .adjustment
+    {
+        display: flex;
+        justify-items: center;
+        gap: 5px;
+        position: relative;
+        
+    }
+
+    .pentagon{
+        clip-path: polygon(59% 50%, 100% 44%, 84% 81%, 18% 81%, 0 44%);
+        background-color: #c39f76;
+        width: 140px;
+        height: 100px;
+        position: relative;
+        bottom: 40px;
+    }
+
+</style>
+<body>
+    <div class="body">
+        <div class="box">
+            <div class="adjustment">
+            <div class="right"></div>
+            <div class="triangle"></div>
+            
+        </div>
+        <div class="pentagon"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
