@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu.show {
+            display: block;
+        }
+        .lg\\:hidden .flex.items-center.justify-between {
+            width: 100%;
+        }
+        
+        .flex.items-center.space-x-4 > svg {
+            margin-right: 10px;
+        }
+        
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-100">
+
+<div class="">
+    <div class="bg-gray-50  border-b hidden lg:block">
+        <div class="container mx-auto py-2 flex justify-between items-center text-sm text-gray-600">
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-gray-800 font-medium black">Anasayfa</a>
+                <a href="#" class="hover:text-gray-800 font-medium black">Müşteri Hizmetleri</a>
+                <a href="#" class="hover:text-gray-800 font-medium black">Mağazalarımız</a>
+                <a href="#" class="hover:text-gray-800 font-medium black">Yetkili Servis</a>
+                <a href="#" class="hover:text-gray-800 font-medium black">Siparişlerim</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                </svg>
+                <a href="tel:02126124455" class="hover:text-gray-800 font-medium black">0212 612 44 55</a>
+                <div class="flex items-center space-x-2">
+                    <img class="rounded-full" src="./images/tr.webp" width="22" height="22">
+                    <span class="hover:text-gray-800 font-medium black">TR</span>
+                    <span class="text-gray-400">|</span>
+                    <span class="hover:text-gray-800 font-medium black">TL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="bg-white px-4">
+        <div class="container mx-auto py-2 flex flex-wrap justify-between items-center">
+                 <!-- Mobile Menu Buttonu -->
+                 <button id="menu-button" class="mb-2 sm:mb-0 sm:mr-4 lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path>
+                    </svg>
+                </button>
+
+            <div class="flex items-center space-x-4">
+                <img src="./images/logo.svg" alt="TailWind Logo" class="h-10">
+            </div>
+    
+            <div class="w-full lg:w-[50%] mt-2 lg:mt-0 lg:order-none order-last">
+                <div class="relative rounded-lg border flex justify-center items-center">
+                    <input type="text" placeholder="Ara" class="w-11/12 py-2 px-4 rounded-md focus:outline-none focus:border-blue-500">
+                    <svg class="absolute right-3 top-[11px] w-5 h-5 text-gray-500" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-4.35-4.35M15 11a6 6 0 10-12 0 6 6 0 0012 0z"></path>
+                    </svg>
+                </div>
+            </div>
+    
+            <div class="flex ms-2 lg:ms-0 justify-end capitalize">
+                <div class="flex items-center gap-4 text-black">
+                    <a href="/uye-girisi-sayfasi" class="cursor-pointer flex items-center gap-1 font-medium hover:text-primary transition" aria-label="Favorilerim">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g>
+                                    <rect x="0" y="0" width="24" height="24"></rect>
+                                    <g transform="translate(4, 5)" fill-rule="nonzero" stroke="currentColor"
+                                        stroke-width="1.2">
+                                        <path
+                                            d="M3.1684843,0.88689366 C3.88452239,0.604430594 4.64915577,0.536444 5.3775955,0.666673039 C6.10476497,0.796674985 6.79590724,1.12419123 7.36655772,1.63323526 L8.30240886,1.94292397 L8.67631747,1.59555287 C9.30643203,1.04922851 10.0918302,0.70853368 10.9249598,0.622464935 L11.530667,0.605549367 C12.6061221,0.656632191 13.5720564,1.1248801 14.2698994,1.85166131 C14.968902,2.57965024 15.3988246,3.56724142 15.4,4.6545315 C15.4,6.47740392 14.1350972,8.43376503 11.8567453,10.5080339 C11.0766824,11.2182227 10.2102946,11.9060381 9.29731037,12.5479998 L8.706177,12.9526025 C7.71992393,13.225889 7.47195732,13.066361 7.21146052,12.892057 L6.7145865,12.5519055 C5.79595037,11.907865 4.9268023,11.2190032 4.14492215,10.5078634 C1.86602412,8.43514786 0.6,6.47788952 0.599999927,4.65464913 C0.60040978,3.82329126 0.855143064,3.03424616 1.30335395,2.37665488 C1.75174084,1.71880537 2.39374367,1.19251374 3.1684843,0.88689366 Z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <span class="sr-only lg:not-sr-only">Favorilerim</span>
+                    </a>
+                    <a href="/uye-girisi-sayfasi" class="flex items-center gap-1 font-medium transition" data-event="hover" data-dropdown="#account-dropdown" data-toggle="dropdown" aria-label="Hesabım">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z">
+                            </path>
+                        </svg>
+                        <span class="sr-only lg:not-sr-only">Hesabım</span>
+                    </a>
+                    <a href="/sepet" class="flex items-center gap-1 font-medium hover:text-primary transition" data-toggle="cart-preview">
+                        <span class="relative">
+                            <svg width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5 5.49558C5 5.22188 5.2184 5 5.48782 5H5.84352C6.56459 5 7.17035 5.55081 7.24999 6.27887L7.38946 7.55414C7.66057 7.37356 7.97749 7.28306 8.32406 7.23402C8.78983 7.16811 9.385 7.16812 10.11 7.16814L17.4186 7.16814C18.6062 7.16814 19.3724 8.44993 18.8139 9.51832L17.0134 12.9624C16.8239 13.3248 16.6648 13.6292 16.5083 13.867C16.3425 14.1187 16.1585 14.3299 15.9027 14.4859C15.647 14.6418 15.3768 14.7076 15.0799 14.7381C14.7994 14.767 14.4596 14.767 14.0547 14.767H10.195C9.60498 14.767 9.11595 14.767 8.72465 14.7162C8.31268 14.6627 7.94579 14.5464 7.63751 14.267C7.32907 13.9874 7.17406 13.6304 7.0759 13.221C6.98275 12.8324 6.92873 12.3399 6.86361 11.7462L6.77545 10.9426C6.74599 10.6742 6.71846 10.4234 6.6961 10.1898L6.28032 6.38833L5.47061 6.13958M7.79371 11.2761L7.82969 11.604C7.89929 12.2385 7.94727 12.6671 8.02382 12.9864C8.09705 13.2919 8.1826 13.4327 8.28705 13.5274C8.39164 13.6222 8.53984 13.693 8.84834 13.733C9.17051 13.7749 9.5968 13.7758 10.227 13.7758H14.0308C14.4659 13.7758 14.7561 13.7752 14.9816 13.752C15.1962 13.73 15.3112 13.6906 15.4006 13.6361C15.4899 13.5816 15.5779 13.4973 15.6974 13.3159C15.823 13.125 15.9593 12.8657 16.1628 12.4763L17.9522 9.05344C18.1632 8.64982 17.8756 8.15929 17.4186 8.15929H10.1465C9.37592 8.15929 8.84918 8.16043 8.45865 8.21569C8.08176 8.26902 7.91621 8.36267 7.80908 8.48389C7.70219 8.60483 7.62882 8.78103 7.61812 9.16546C7.61118 9.41489 7.63088 9.71561 7.66744 10.0957L7.79068 11.2226C7.79265 11.2405 7.79365 11.2584 7.79371 11.2761ZM8.68911 16.8319C8.36919 16.8319 8.10983 17.0954 8.10983 17.4204C8.10983 17.7454 8.36919 18.0088 8.68911 18.0088C9.00903 18.0088 9.26839 17.7454 9.26839 17.4204C9.26839 17.0954 9.00903 16.8319 8.68911 16.8319ZM7.1342 17.4204C7.1342 16.548 7.83035 15.8407 8.68911 15.8407C9.54787 15.8407 10.244 16.548 10.244 17.4204C10.244 18.2927 9.54787 19 8.68911 19C7.83035 19 7.1342 18.2927 7.1342 17.4204ZM15.0917 16.8319C14.7718 16.8319 14.5124 17.0954 14.5124 17.4204C14.5124 17.7454 14.7718 18.0088 15.0917 18.0088C15.4116 18.0088 15.671 17.7454 15.671 17.4204C15.671 17.0954 15.4116 16.8319 15.0917 16.8319ZM13.5368 17.4204C13.5368 16.548 14.233 15.8407 15.0917 15.8407C15.9504 15.8407 16.6466 16.548 16.6466 17.4204C16.6466 18.2927 15.9504 19 15.0917 19C14.233 19 13.5368 18.2927 13.5368 17.4204Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <span class="absolute -end-1 -top-2 empty:!hidden text-[9px] bg-slate-200 border rounded-full flex items-center justify-center min-w-4 min-h-4" data-toggle="cart-count"></span>
+                        </span>
+                        <span class="sr-only lg:not-sr-only">Sepetim</span>
+                        <span class="hidden" data-toggle="cart-price"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+
+    <body class="bg-gray-100">
+        
+        <!-- Katagoriler Menüsü -->
+        <div class="w-full shadow-sm bg-white border-t border-light lg:block hidden mobile-menu">
+            <nav class="flex relative">
+                <div class="items-center container mx-auto flex flex-col lg:flex-row justify-left space-y-4 lg:space-y-0 lg:space-x-8 font-medium black">
+                    <span id="header-menu-1001" class="group flex items-center py-1 capitalize flex font-medium text-sm cursor-pointer h-12 transition [.active_&amp;]:hover:text-gray-600 font-medium black">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path>
+                            </svg>
+                        </a>
+                        <div>Kategoriler</div>
+                        <div class="absolute mt-[405px] w-[80%] h-500px pt-200px bg-white text-gray-800 hidden group-hover:block">
+                            <div class="container h-full [&:not(nav.relative_&)]:relative [&:not(nav.relative_&)]:!px-[1rem]">
+                                <ul class="w-[270px] h-full bg-gray-100 overflow-y-auto *:w-full">
+                                    <li class="group/category">
+                                        <a href="https://tail.1ticaret.com/elbise" id="header-menu-1471001" class="p-4 flex justify-between items-center group-hover/category:bg-white z-10 relative transition-colors ">
+                                            <span class="font-semibold text-sm group-hover/category:text-primary transition-colors">Ev &amp; Mobilya</span>
+                                            <span class="group-hover/category:text-primary transition-colors rtl:rotate-180">
+                                                <svg width="6" height="10" viewBox="0 0 6 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.656333 0C0.83839 0 0.987296 0.0584615 1.11291 0.178054L5.75932 4.50373C5.84195 4.58242 5.90212 4.66293 5.93968 4.7434C5.97666 4.8226 5.99682 4.90975 6 5.0065C5.99989 5.09458 5.98177 5.17941 5.94574 5.2566C5.90882 5.33569 5.84762 5.41542 5.7605 5.49517L1.11448 9.82047C0.987296 9.94154 0.83839 10 0.656333 10C0.530468 10 0.419913 9.97238 0.321628 9.91742C0.22215 9.8618 0.143892 9.78803 0.0845271 9.69433C0.0279683 9.60505 0 9.50625 0 9.39339C0 9.23017 0.0656133 9.08678 0.205814 8.9533L4.3218 5.1441V4.8559L0.203826 1.04484C0.0656133 0.913223 0 0.76983 0 0.606613C0 0.497846 0.0278271 0.400936 0.0845271 0.311439C0.144265 0.217147 0.223194 0.142001 0.323525 0.0843849C0.421386 0.0281862 0.531237 0 0.656333 0Z"></path>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <div class="absolute w-full h-full overflow-y-auto ps-[270px] top-0 opacity-0 invisible group-hover/category:opacity-100 shadow-lg rounded-lg group-hover/category:visible">
+                                            <div class="w-full p-6 text-xs !leading-6 *:mb-4 *:break-inside-avoid-column columns-4 *:block *:w-full">
+                                                <div>
+                                                    <a href="https://tail.1ticaret.com/anasayfa" class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Sofra & Mutfak</a>
+                                                    <div class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                        <a href="https://tail.1ticaret.com/elbise">Yemek Takımı</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="group/category">
+                                        <a href="https://tail.1ticaret.com/kadin" id="header-menu-1471002" class="p-4 flex justify-between items-center group-hover/category:bg-white z-10 relative transition-colors ">
+                                            <span class="font-semibold text-sm group-hover/category:text-primary transition-colors">Kadın</span>
+                                            <span class="group-hover/category:text-primary transition-colors rtl:rotate-180">
+                                                <svg width="6" height="10" viewBox="0 0 6 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.656333 0C0.83839 0 0.987296 0.0584615 1.11291 0.178054L5.75932 4.50373C5.84195 4.58242 5.90212 4.66293 5.93968 4.7434C5.97666 4.8226 5.99682 4.90975 6 5.0065C5.99989 5.09458 5.98177 5.17941 5.94574 5.2566C5.90882 5.33569 5.84762 5.41542 5.7605 5.49517L1.11448 9.82047C0.987296 9.94154 0.83839 10 0.656333 10C0.530468 10 0.419913 9.97238 0.321628 9.91742C0.22215 9.8618 0.143892 9.78803 0.0845271 9.69433C0.0279683 9.60505 0 9.50625 0 9.39339C0 9.23017 0.0656133 9.08678 0.205814 8.9533L4.3218 5.1441V4.8559L0.203826 1.04484C0.0656133 0.913223 0 0.76983 0 0.606613C0 0.497846 0.0278271 0.400936 0.0845271 0.311439C0.144265 0.217147 0.223194 0.142001 0.323525 0.0843849C0.421386 0.0281862 0.531237 0 0.656333 0Z"></path>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <div class="absolute w-full h-full overflow-y-auto ps-[270px] top-0 opacity-0 invisible group-hover/category:opacity-100 shadow-lg rounded-lg group-hover/category:visible">
+                                            <div class="w-full p-6 text-xs !leading-6 *:mb-4 *:break-inside-avoid-column columns-4 *:block *:w-full">
+                                                <div>
+                                                    <a href="https://tail.1ticaret.com/giyim" class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Giyim</a>
+                                                    <div class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                        <a href="https://tail.1ticaret.com/elbise">Elbise</a>
+                                                        <a href="https://tail.1ticaret.com/ayakkabi">Ayakkabı</a>
+                                                        <a href="https://tail.1ticaret.com/canta">Çanta</a>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <a href="https://tail.1ticaret.com/aksesuar" class="flex font-semibold text-sm hover:text-primary mb-1 transition-colors">Aksesuar</a>
+                                                    <div class="*:w-full [&_a]:flex [&_a]:transition-colors [&_a:hover]:text-primary">
+                                                        <a href="https://tail.1ticaret.com/taki">Takı</a>
+                                                        <a href="https://tail.1ticaret.com/saat">Saat</a>
+                                                        <a href="https://tail.1ticaret.com/sapka">Şapka</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#" class="block px-4 py-2">Erkek</a></li>
+                                    <li><a href="#" class="block px-4 py-2">Kampanyalar</a></li>
+                                    <li><a href="#" class="block px-4 py-2">Anne & Çocuk</a></li>
+                                    <li><a href="#" class="block px-4 py-2">Müşteri Hizmetleri</a></li>
+                                    <li><a href="#" class="block px-4 py-2">Süpermarket</a></li>
+                                    <li><a href="#" class="block px-4 py-2">Kozmetik</a></li>
+                                    <li><a href="#" class="block px-4 py-2">Elektronik</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </span>
+                    <a href="#" class="hover:text-gray-600 font-medium black">Yeni</a>
+                    <a href="#" class="hover:text-gray-600 font-medium black">İndirim</a>
+                    <a href="#" class="hover:text-gray-600 font-medium black">Kampanya</a>
+                    <a href="#" class="hover:text-gray-600 font-medium black">Markalar</a>
+                    <a href="#" class="hover:text-gray-600 font-medium black">Galeri</a>
+                    <a href="#" class="hover:text-gray-600 font-medium black">SSS</a>
+                    <a href="#" class="hover:text-gray-600 font-medium black">Blog</a>
+                </div>
+            </nav>
+        </div>
+         <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('show');
+        });
+    </script>
+</div>
+    
+</body>
+
+</html>
