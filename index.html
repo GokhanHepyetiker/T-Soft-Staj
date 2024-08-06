@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #212121;
+        margin: 0;
+    }
+    
+    .container {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background-color: white;
+    }
+    
+    .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 130px;
+        height: 130px;
+        background-color: #3498db;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .gear {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        transform: translate(-50%, -50%);
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #212121;
+        margin: 0;
+    }
+    
+    .container {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background-color: white;
+    }
+    
+    .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 130px;
+        height: 130px;
+        background-color: #3498db;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .gear {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        transform: translate(-50%, -50%);
+    }
+    
+    .tooth1 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: -1px;
+        background-color: #3498db;
+        border-radius: 50%;
+        transform-origin: center;
+        animation: pulse 1s infinite;
+    }
+    
+    .tooth2 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 35px;
+        top: -16px;
+        background-color: #3498db;
+        border-radius: 50%;
+        transform-origin: center;
+        animation: pulse 1s infinite;
+    }
+    
+    .tooth3 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 73px;
+        top: -6px;
+        background-color: #3498db;
+        border-radius: 50%;
+        transform-origin: center;
+        animation: pulse 1s infinite;
+    }
+    
+    .tooth4 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 88px;
+        top: 20px;
+        background-color: #3498db;
+        border-radius: 50%;
+        transform-origin: center;
+        animation: pulse 1s infinite;
+    }
+    
+    .tooth5 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 89px;
+        top: 52px;
+        background-color: #3498db;
+        border-radius: 50%;
+        transform-origin: center;
+        animation: pulse 1s infinite;
+    }
+    .tooth6 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 74px;
+        bottom: -2px;
+        background-color: #3498db;
+        border-radius: 50%;
+        transform-origin: center;
+        animation: pulse 1s infinite;
+    }
+    
+    .tooth7 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 40px;
+        bottom:-16px;
+        background-color: #3498db;
+        border-radius: 50%;
+        transform-origin: center;
+        animation: pulse 1s infinite;
+    }
+    
+    .tooth8 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 8px;
+        bottom:-7px;
+        background-color: #3498db;
+        border-radius: 50%;
+        transform-origin: center;
+        animation: pulse 1s infinite;
+    }
+    
+    .tooth9 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: -10px;
+        bottom: 15px;
+        background-color: #3498db;
+        border-radius: 50%;
+        transform-origin: center;
+        animation: pulse 1s infinite;
+    }
+    
+    .tooth10 {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: -15px;
+        bottom: 47px;
+        background-color: #3498db;
+        border-radius: 50%;
+        transform-origin: center;
+        animation: pulse 1s infinite;
+    }
+    
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.5) rotate(0deg);
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="circle"></div>
+        <div class="gear">
+            <div class="tooth1"></div>
+            <div class="tooth2"></div>
+            <div class="tooth3"></div>
+            <div class="tooth4"></div>
+            <div class="tooth5"></div>
+            <div class="tooth6"></div>
+            <div class="tooth7"></div>
+            <div class="tooth8"></div>
+            <div class="tooth9"></div>
+            <div class="tooth10"></div>
+        </div>
+    </div>
+</body>
+</html>
