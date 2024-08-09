@@ -7,6 +7,7 @@ font-size: 14px;
     }
 }
 
+
 body {
     font-family: Roboto ,sans-serif;
     background-color: #021227;
@@ -302,15 +303,11 @@ header{
     flex-direction: row;  
 }
 
-@media (min-width: 320px) {
-    .Tutamac{
-    width: 1440px; 
-}
-}
+
 
 @media (min-width: 768px) {
     .Tutamac {
-        width: 1440px; 
+         
         display: flex;
         flex-wrap: nowrap; 
         flex-direction: none;
@@ -322,7 +319,15 @@ header{
     height: 300px; 
     order: 2;
     position: relative;
+    overflow: hidden; 
 }
+
+.mockup-window img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
 .mockup-window::before{
     content: "";
     height: .75rem;
@@ -337,6 +342,15 @@ header{
     .mockup-window {
         width: 50%; 
         order: 0; 
+    }
+}
+
+@media (max-width: 767px) {
+    .mockup-window {
+        width: 100%; 
+    }
+    .Tutamac{
+    justify-content: center;
     }
 }
 
