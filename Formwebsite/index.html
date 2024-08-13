@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Sayfası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <img class="bayrak" src="./images/tr.webp" alt="Türk Bayrağı">
+            <span>TR-TL</span>
+            <span class="musteri-hizmetleri">MÜŞTERİ DESTEK HATTI : 0212 480 00 48</span>
+            <nav>
+                <ul class="minibar">
+                    <li><a href="#"> Siparişlerim</a></li>
+                    <li><a href="#">Markalar</a></li>
+                    <li><a href="#">Kampanyalar</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo-search">
+            <img src="./images/logo.svg" alt="Logo" class="logo">
+            <input type="text" placeholder="Aradığınız ürün, kategori veya markayı yazınız." class="search-box">
+            <button class="search-button">Ara</button>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">TÜM KATEGORİLER</a></li>
+                <li><a href="#">KİTAP</a></li>
+                <li><a href="#">ELEKTRONİK</a></li>
+                <li><a href="#">GİYİM</a></li>
+                <li><a href="#">HEDİYE</a></li>
+                <li><a href="#">KİŞİYE ÖZEL</a></li>
+                <li><a href="#">KOMBİNLER</a></li>
+                <li><a href="#">V5 BLOG</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="breadcrumb">
+            <span><a href="#">Anasayfa </a> > İletişim</span>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>İletişim Bilgileri</h2>
+                <table>
+                    <tr>
+                        <td>Firma Adı</td>
+                        <td>TEKROM A.Ş.</td>
+                    </tr>
+                    <tr>
+                        <td>Telefon</td>
+                        <td>0212 48 000 48</td>
+                    </tr>
+                    <tr>
+                        <td>Faks</td>
+                        <td>Faks No</td>
+                    </tr>
+                    <tr>
+                        <td>Firma Adres</td>
+                        <td>YTU Teknopark D2 NO:104</td>
+                    </tr>
+                    <tr>
+                        <td>E-Posta</td>
+                        <td>tsoft@tsoft.com</td>
+                    </tr>
+                    <tr>
+                        <td>Facebook</td>
+                        <td><a href="https://www.facebook.com/tsofteticaret">https://www.facebook.com/tsofteticaret</a></td>
+                    </tr>
+                    <tr>
+                        <td>Havale Bildirimi</td>
+                        <td><a href="#">Ödeme bildirimi için tıklayınız.</a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="contact-form">
+                <h2>İletişim Formu</h2>
+                <form id="contact-form">
+                    <label for="department">Departman Seçiniz</label>
+                    <select id="department">
+                        <option>Satış</option>
+                        <option>Destek</option>
+                    </select>
+
+                    <label for="company">Şirket Adı</label>
+                    <input type="text" id="company">
+                    <span id="company-error" style="display: none;"></span>
+
+                    <label for="password">Şifre</label>
+                    <input type="password" id="password">
+                    <span id="password-error" style="display: none;"></span>
+                
+                    <label for="name">Adınız</label>
+                    <input type="text" id="name">
+                    <span id="name-error" style="display: none;"></span>
+                
+                    <label for="surname">Soyadınız</label>
+                    <input type="text" id="surname">
+                    <span id="surname-error" style="display: none;"></span>
+                
+                    <label for="email">E-Posta Adresiniz</label>
+                    <input type="email" id="email">
+                    <span id="email-error" style="display: none;"></span>
+                
+                    <label for="phone">Telefon</label>
+                    <div class="phone-input">
+                        <span class="country-code">TR</span>
+                        <input type="tel" id="phone">
+                    </div>
+                    <span id="phone-error" style="display: none;"></span>
+                
+                    <label for="message">Mesajınız</label>
+                    <textarea id="message"></textarea>
+                
+                    <div class="security-code">
+                        <label for="security">Güvenlik Kodu</label>
+                        <input type="text" id="security">
+                        <button type="button">Yenile</button>
+                    </div>
+                
+                    <div class="form-footer">
+                        <label>
+                            <input type="checkbox"> Gizlilik Politikası'nı Okudum ve Kabul Ediyorum.
+                        </label>
+                        <button type="submit" class="submit-button">Gönder</button>
+                        <button type="reset" class="reset-button">Temizle</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
