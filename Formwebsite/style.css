@@ -17,6 +17,7 @@ body {
 
 .musteri-hizmetleri {
     padding-left: 30px;
+    color: 	#666666;
 }
 
 .bayrak{
@@ -32,6 +33,14 @@ body {
     top: -4px;
     right: 100px;
     gap: 20px;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.minibar a {
+    text-decoration: none; 
+    color: 	#666666;
 }
 
 .logo-search {
@@ -51,19 +60,20 @@ body {
     padding: 10px;
     margin-left: 20px;
     font-size: 16px;
+    border: none;
 }
 
 .search-button {
     padding: 10px 20px;
     margin-left: 10px;
-    background-color: #f39c12;
+    background-color:#666666 ;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 .main-nav {
-    background-color: #e74c3c;
+    background-color:#f1f1f1;
     text-align: center;
     padding: 10px 0;
 }
@@ -78,17 +88,18 @@ body {
 
 .main-nav ul li {
     margin: 0 10px;
+    list-style-type: none;
 }
 
 .main-nav a {
-    color: white;
+    color: #666666;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
 }
 
 .main-nav a:hover {
-    background-color: #c0392b;
+    color: #fd6905;
 }
 
 .breadcrumb {
@@ -96,6 +107,23 @@ body {
     font-size: 14px;
     background-color: white;
     margin: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif; 
+    color: #2C3E50;
+    gap: 5px; 
+}
+
+.breadcrumb a {
+    text-decoration: none; 
+    color:#666666; 
+    font-family: 'Georgia', serif; 
+}
+
+.breadcrumb i {
+    margin-right: 8px; 
+    color:#666666; 
 }
 
 .contact-section {
@@ -114,7 +142,7 @@ body {
 }
 
 .contact-info h2, .contact-form h2 {
-    color: #e74c3c;
+    color:#fd6905;
     border-bottom: 2px solid #e74c3c;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -136,7 +164,7 @@ body {
 }
 
 .contact-info a {
-    color: #e74c3c;
+    color: 	#666666;
     text-decoration: none;
 }
 
@@ -145,7 +173,7 @@ body {
 }
 
 .contact-form {
-    border: 2px solid #ccc;
+    box-shadow: #E74C3C;
     padding: 20px;
     border-radius: 10px;
     max-width: 500px;
@@ -179,18 +207,34 @@ body {
     display: none;
 }
 
-.contact-form button {
+.submit-button{
     width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
+    padding: 20px 60px;
+    background-color:#fd6905;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-.contact-form button:hover {
-    background-color: #0056b3;
+.submit-button:hover {
+    background-color: #e55d04;
+}
+
+.reset-button{
+    width: 100%;
+    padding: 20px 60px;
+    background-color:#2c2a28;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.reset-button:hover {
+    background-color: #1f1e1c;
 }
 
 .contact-form form {
@@ -222,6 +266,10 @@ body {
     margin-right: 5px;
     position: relative;
     top: -6px;
+}
+
+.message{
+    border-radius: 5px;
 }
 
 .security-code {
@@ -275,21 +323,12 @@ body {
     gap: 10px;
 }
 
-.submit-button, .reset-button {
-    padding: 10px 20px;
-    font-size: 14px;
-}
+
 .buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-
-.submit-button, .reset-button {
-    padding: 10px 20px;
-    font-size: 14px;
-}
-
 
 input.invalid {
     border: 2px solid red;
@@ -512,5 +551,25 @@ input.valid {
         box-shadow: none;
         padding-left: 5px;
         width: 95%; 
+    }
+}
+
+@media(max-width:320px){
+    .minibar{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: -21px;
+        right: 100px;
+        gap: 20px;
+        left:-11px;
+    }
+
+    .musteri-hizmetleri{
+        font-size: small;
+        padding-left: 30px;
+        position: relative;
+        top: 55px;
+        left:-7px
     }
 }
