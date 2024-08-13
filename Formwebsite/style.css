@@ -240,35 +240,54 @@ body {
 
 .form-footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.politics {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.form-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.politics {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.politics input[type="checkbox"] {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
     gap: 10px;
 }
 
-.form-footer label {
+.submit-button, .reset-button {
+    padding: 10px 20px;
     font-size: 14px;
 }
-
-.Politics{
+.buttons {
     display: flex;
-    font-weight: 600;
-
+    justify-content: center;
+    gap: 10px;
 }
 
-.submit-button {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
+.submit-button, .reset-button {
     padding: 10px 20px;
-    cursor: pointer;
-}
-
-.reset-button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    font-size: 14px;
 }
 
 
