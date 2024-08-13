@@ -20,6 +20,12 @@ body {
     color: 	#666666;
 }
 
+.stabilizer{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
 .bayrak{
     width: 20px;
     height: 20px;
@@ -42,6 +48,12 @@ body {
     text-decoration: none; 
     color: 	#666666;
 }
+
+.minibar i {
+    margin-right: 8px; 
+}
+
+
 
 .logo-search {
     display: flex;
