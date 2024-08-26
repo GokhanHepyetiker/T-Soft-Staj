@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0d0d0d;
+    color: #00ff99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    background-color: rgba(26, 26, 26, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 255, 153, 0.5);
+    text-align: center;
+    width: 300px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.lock-icon {
+    font-size: 4em;
+    color: #00ff99;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+h1 {
+    color: #00ff99;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #00cc7a;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #333;
+    color: #00ff99;
+    border: 1px solid #00ff99;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #00ff99;
+    color: #0d0d0d;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #00cc7a;
+}
+
+.result-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#result {
+    font-size: 1.2em;
+    color: #00ff99;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#copy {
+    background-color: #00ff99;
+    color: #0d0d0d;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#copy:hover {
+    background-color: #00cc7a;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .lock-icon {
+        font-size: 3em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 8px;
+    }
+
+    #result {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .lock-icon {
+        font-size: 2.5em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 6px;
+    }
+
+    #result {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 95%;
+        padding: 25px;
+    }
+
+    .lock-icon {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    button {
+        padding: 5px;
+    }
+
+    #result {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .lock-icon {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 0.9em;
+    }
+
+    p {
+        font-size: 0.7em;
+    }
+
+    button {
+        padding: 4px;
+    }
+
+    #result {
+        font-size: 0.7em;
+    }
+}
