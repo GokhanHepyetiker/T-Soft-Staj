@@ -30,15 +30,15 @@ form {
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Kartların ortalanmasını sağlar */
-    gap: 1rem; /* Kartlar arasındaki boşluk */
+    justify-content: center; 
+    gap: 1rem; 
 }
 
 .movie {
-    flex-grow: 1; /* Kartların yanlardaki boşluğu doldurması için */
-    flex-basis: calc(50% - 1rem); /* Kart genişliğini %50 olarak ayarlar */
-    max-width: 445px; /* Maksimum genişlik 445px */
-    margin: 1rem 0; /* Kartların üst ve alt boşluğu */
+    flex-grow: 1; 
+    flex-basis: calc(50% - 1rem); 
+    max-width: 445px; 
+    margin: 1rem 0; 
     background-color: #373b69;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -48,6 +48,7 @@ main {
 
 .movie img {
     width: 100%;
+    aspect-ratio: 445px 668px;
 }
 
 .movie-info {
@@ -136,5 +137,13 @@ main {
 @media (min-width: 1440px) {
     .movie {
         flex-basis: calc(33.33% - 1rem); 
+    }
+}
+
+@media (min-width:1370px) and (max-width:1825px){
+    .movie {
+        flex-basis: calc(33.33% - 1rem); 
+        flex-grow: 1; 
+        max-width: 100%; 
     }
 }
